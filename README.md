@@ -43,11 +43,9 @@ containerized, production-ready applications with a REST API, background tasks a
 | Project | What it is | Stack |
 | --- | --- | --- |
 | **[django-template](https://github.com/igorkhaylov/django-template)** | Production-oriented Django starter: fully containerized, structured logging, tests and CI/CD out of the box | Django 5.2, DRF, PostgreSQL, Redis, Celery, MinIO, Docker, uv, Ruff, pytest |
-| **[react-template](https://github.com/igorkhaylov/react-template)** | Frontend starter to pair with the Django template | React, TypeScript |
-| **[base_billing_dj](https://github.com/igorkhaylov/base_billing_dj)** | Base billing module with a REST API and background tasks | Django, DRF, Celery, Redis, drf-yasg |
-| **[thumb_generator](https://github.com/igorkhaylov/thumb_generator)** | Utility for generating image thumbnails | Python, Pillow |
-| **[minio_docker](https://github.com/igorkhaylov/minio_docker)** | Ready-to-run MinIO (S3-compatible storage) setup | Docker Compose, MinIO |
-| **[archlinux_config](https://github.com/igorkhaylov/archlinux_config)** · **[archlinux_sway](https://github.com/igorkhaylov/archlinux_sway)** | My Arch Linux and Sway dotfiles | Shell, Arch Linux |
+| **[portfolio](https://github.com/igorkhaylov/portfolio)** | This site — [igorkhaylov.uz](https://igorkhaylov.uz). Bilingual, every page rendered from the database and edited in the admin | Django, DRF, PostgreSQL, Celery, MinIO, Docker |
+| **[react-template](https://github.com/igorkhaylov/react-template)** | Frontend starter to pair with the Django template | React, TypeScript, Vite |
+| **[archlinux_config](https://github.com/igorkhaylov/archlinux_config)** · **[archlinux_sway](https://github.com/igorkhaylov/archlinux_sway)** | My Arch Linux dotfiles: i3 and Sway setups, plus the notes from building them | Shell, Arch Linux |
 
 ### GitHub
 
