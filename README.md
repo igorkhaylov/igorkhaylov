@@ -49,9 +49,18 @@ containerized, production-ready applications with a REST API, background tasks a
 
 ### GitHub
 
+<!-- The cards are static SVGs regenerated weekly by .github/workflows/stats.yml —
+     the shared github-readme-stats instance kept answering 503. -->
 <p>
-  <img height="150" alt="stats" src="https://github-readme-stats.vercel.app/api?username=igorkhaylov&show_icons=true&hide_border=true&theme=transparent&count_private=true">
-  <img height="150" alt="top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igorkhaylov&layout=compact&hide_border=true&theme=transparent&langs_count=8">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+    <img align="top" alt="GitHub stats" src="assets/stats-light.svg">
+  </picture>
+  &nbsp;&nbsp;
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg">
+    <img align="top" alt="Top languages" src="assets/langs-light.svg">
+  </picture>
 </p>
 
 ---
