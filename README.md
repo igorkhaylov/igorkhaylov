@@ -1,7 +1,7 @@
 <h1 align="center">Igor Khaylov</h1>
 
 <p align="center">
-  Backend Developer · Python / Django · Samarkand, Uzbekistan
+  Backend Developer · Python / Django · Tashkent, Uzbekistan
 </p>
 
 <p align="center">
@@ -70,7 +70,7 @@ containerized, production-ready applications with a REST API, background tasks a
 
 <br>
 
-**Игорь Хайлов** — backend-разработчик, Python / Django. Самарканд, Узбекистан.
+**Игорь Хайлов** — backend-разработчик, Python / Django. Ташкент, Узбекистан.
 
 Пишу backend для веба на Python и Django: от сайтов под ключ до контейнеризованных
 production-приложений с REST API, фоновыми задачами и CI/CD.
