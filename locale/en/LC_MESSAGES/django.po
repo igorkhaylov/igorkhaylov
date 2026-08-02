@@ -1,0 +1,455 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-04 17:17+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\main\templates\main\index.html:21 .\main\templates\main\index.html:138
+#: .\templates\includes\header.html:8
+msgid "Игорь Хайлов"
+msgstr "Igor Khaylov"
+
+#: .\main\templates\main\index.html:22
+msgid "Я"
+msgstr "I'm"
+
+#: .\main\templates\main\index.html:22
+msgid "Python Программист, Web Разработчик"
+msgstr "Python Programmer, Web Developer"
+
+#: .\main\templates\main\index.html:35 .\templates\includes\header.html:29
+#: .\templates\includes\header.html:52
+msgid "Обо мне"
+msgstr "About Me"
+
+#: .\main\templates\main\index.html:37
+msgid ""
+"Свой путь в IT начал с изучения основ HTML и CSS и Python. Имею опыт "
+"написания консольных программ, скриптов на Python для автоматизации задач, "
+"десктопные приложения на WxPython, после перешел на разработку Web "
+"приложений на Django. "
+msgstr ""
+
+#: .\main\templates\main\index.html:47
+msgid "Python Программист &amp; Web Разработчик"
+msgstr "Python Programmer &amp; Web Developer"
+
+#: .\main\templates\main\index.html:49
+msgid "Разрабатываю Web приложения на Django. Сайты под ключ. SEO продвижение."
+msgstr ""
+
+#: .\main\templates\main\index.html:57
+msgid "День рождения"
+msgstr "Birthday"
+
+#: .\main\templates\main\index.html:62
+msgid "Сайт"
+msgstr "Website"
+
+#: .\main\templates\main\index.html:68
+msgid "Телефон"
+msgstr "Phone"
+
+#: .\main\templates\main\index.html:74
+msgid "Город"
+msgstr "City"
+
+#: .\main\templates\main\index.html:85
+msgid "Возраст"
+msgstr "Age"
+
+#: .\main\templates\main\index.html:90
+msgid "Уровень"
+msgstr "Degree"
+
+#: .\main\templates\main\index.html:92
+msgid "Мидл"
+msgstr "Middle"
+
+#: .\main\templates\main\index.html:97
+msgid "Почта"
+msgstr "PhEmailone"
+
+#: .\main\templates\main\index.html:103 .\main\templates\main\index.html:215
+msgid "Фриланс"
+msgstr "Freelance"
+
+#: .\main\templates\main\index.html:105
+msgid "Возможен"
+msgstr "Available"
+
+#: .\main\templates\main\index.html:126 .\templates\includes\header.html:32
+#: .\templates\includes\header.html:55
+msgid "Резюме"
+msgstr "Resume"
+
+#: .\main\templates\main\index.html:128
+msgid ""
+"Ищу возможность принять участие в совместной, конкурентной и изобретательной "
+"среде, с огромным желанием участвовать в проектировании и разработке "
+"масштабных приложений, а также развивать свой потенциал и обновлять свои "
+"знания с новыми технологиями."
+msgstr ""
+
+#: .\main\templates\main\index.html:135
+msgid "Кратко"
+msgstr "Sumary"
+
+#: .\main\templates\main\index.html:141
+msgid ""
+"Начал программировать в 2019 году. Работал с отправкой почты, Авторизацией "
+"пользователей на сайте, технологией Ajax, картами Api Mapbox. Готов "
+"постоянно изучать новые технологии в программировании и применять их на "
+"практике. Активно пользуюсь Linux."
+msgstr ""
+
+#: .\main\templates\main\index.html:145
+msgid "Узбекистан г.Самарканд"
+msgstr "Samarkand, Uzbekistan"
+
+#: .\main\templates\main\index.html:152
+msgid "Образование"
+msgstr "Education"
+
+#: .\main\templates\main\index.html:154
+msgid "Среднее профессиональное"
+msgstr "Secondary vocational"
+
+#: .\main\templates\main\index.html:158
+msgid "Самаркандский профессиональный колледж железнодорожного транспорта"
+msgstr "Samarkand Professional College of Rail Way Transport"
+
+#: .\main\templates\main\index.html:162
+msgid ""
+"Специальность - <em>Эксплуатация железных дорог</em>.<br> Профессия - "
+"<em>Дежурный по станции</em>."
+msgstr ""
+
+#: .\main\templates\main\index.html:166
+msgid "Компьютерные курсы"
+msgstr "Computer courses"
+
+#: .\main\templates\main\index.html:168
+msgid "Учебный центр «Samarqand Bilim Orzu»"
+msgstr "Educational center «Samarqand Bilim Orzu»"
+
+#: .\main\templates\main\index.html:170
+msgid ""
+"На отлично окончил компьютерные курсы по офисным программам и пользованию "
+"интернета"
+msgstr ""
+
+#: .\main\templates\main\index.html:174
+
+msgid "Образовательные курсы"
+msgstr "Computer courses"
+
+#: .\main\templates\main\index.html:176
+
+msgid "HTML5 &amp; CSS &amp; JavaScript"
+msgstr "HTML5 &amp; CSS &amp; JavaScript"
+
+#: .\main\templates\main\index.html:178
+msgid "Бесплатные курсы на Youtube."
+msgstr "Free courses on Youtube"
+
+#: .\main\templates\main\index.html:180
+msgid "Основные теги HTML"
+msgstr ""
+
+#: .\main\templates\main\index.html:181
+msgid "Основы CSS"
+msgstr ""
+
+#: .\main\templates\main\index.html:182
+msgid "Работа с медиафайлами на сайте"
+msgstr ""
+
+#: .\main\templates\main\index.html:186
+msgid "Python"
+msgstr "Python"
+
+#: .\main\templates\main\index.html:188
+msgid "Курсы программирования Foxford и Youtube"
+msgstr ""
+
+#: .\main\templates\main\index.html:190
+msgid "Программирование на Python"
+msgstr "Python Programming"
+
+#: .\main\templates\main\index.html:191
+msgid "Основы ООП и использование на практике"
+msgstr ""
+
+#: .\main\templates\main\index.html:192
+msgid "Работа с базами данных SQL"
+msgstr ""
+
+#: .\main\templates\main\index.html:196
+msgid "Linux"
+msgstr "Linux"
+
+#: .\main\templates\main\index.html:198
+msgid "Администрирование Linux"
+msgstr ""
+
+#: .\main\templates\main\index.html:200
+msgid "Знакомство с архитектурой Linux"
+msgstr ""
+
+#: .\main\templates\main\index.html:201
+msgid "Файловые системы"
+msgstr ""
+
+#: .\main\templates\main\index.html:202
+msgid "Управление пользователями"
+msgstr ""
+
+#: .\main\templates\main\index.html:203
+msgid "Работа в Linux"
+msgstr ""
+
+#: .\main\templates\main\index.html:212
+msgid "Профессиональный опыт"
+msgstr "Professional Experience"
+
+#: .\main\templates\main\index.html:216
+msgid "2020 - Настоящее время"
+msgstr "2020 - Present"
+
+#: .\main\templates\main\index.html:219
+msgid "Backend разработка сайтов на Django"
+msgstr ""
+
+#: .\main\templates\main\index.html:220
+msgid "Доработка и поддержка сайтов"
+msgstr ""
+
+#: .\main\templates\main\index.html:221
+msgid "Разработка Web приложений для бизнеса"
+msgstr ""
+
+#: .\main\templates\main\index.html:222
+msgid "Преподавал уроки по программированию на Python в it-школе"
+msgstr ""
+
+#: .\main\templates\main\index.html:227
+msgid "Программист, Специалист технической поддержки"
+msgstr ""
+
+#: .\main\templates\main\index.html:228
+msgid "2018 - Настоящее время"
+msgstr "2018 - Present"
+
+#: .\main\templates\main\index.html:229
+msgid "ООО «Sam Antep Gilam», г. Самарканд"
+msgstr "LLC «Sam Antep Gilam», Samarkand"
+
+#: .\main\templates\main\index.html:231 .\main\templates\main\index.html:245
+msgid "Техподдержка и обслуживание компьютерной техники"
+msgstr ""
+
+#: .\main\templates\main\index.html:232 .\main\templates\main\index.html:246
+msgid "Установка и настройка программного обеспечения"
+msgstr ""
+
+#: .\main\templates\main\index.html:233
+msgid "Настройка и устранение сетевых неисправностей"
+msgstr ""
+
+#: .\main\templates\main\index.html:234
+msgid "Установка и настройка камер видеонаблюдения"
+msgstr ""
+
+#: .\main\templates\main\index.html:235
+msgid "Подключение сертификатов для работы с банк-клиентом"
+msgstr ""
+
+#: .\main\templates\main\index.html:236
+msgid "Написание Python скриптов для автоматизации работы"
+msgstr ""
+
+#: .\main\templates\main\index.html:237
+msgid "Решение пользовательских проблем"
+msgstr ""
+
+#: .\main\templates\main\index.html:241
+msgid "Оператор ЭВМ"
+msgstr ""
+
+#: .\main\templates\main\index.html:243
+msgid "Топливный железнодорожный склад г. Самарканд"
+msgstr ""
+
+#: .\main\templates\main\index.html:250
+msgid "Стажировка в электросети"
+msgstr ""
+
+#: .\main\templates\main\index.html:252
+msgid "САМАРКАНДСКАЯ ГОРОДСКАЯ ЭЛЕКТРОСЕТЬ - г. САМАРКАНД"
+msgstr ""
+
+#: .\main\templates\main\index.html:253
+msgid "Стажировка на лето"
+msgstr ""
+
+#: .\main\templates\main\index.html:255
+msgid "Перенос должностных инструкций с письменного в печатный формат"
+msgstr ""
+
+#: .\main\templates\main\index.html:256
+msgid "Перенос схем в электронный формат "
+msgstr ""
+
+#: .\main\templates\main\index.html:257
+msgid "Решение мелких проблем с компьютерами"
+msgstr ""
+
+#: .\main\templates\main\index.html:273 .\templates\includes\header.html:35
+#: .\templates\includes\header.html:58
+msgid "Портфолио"
+msgstr "Portfolio"
+
+#: .\main\templates\main\portfolio-details.html:26
+#: .\main\templates\main\projects_detail.html:30
+#: .\templates\includes\header.html:26 .\templates\includes\header.html:49
+msgid "Главная"
+msgstr "Home"
+
+#: .\main\templates\main\projects_detail.html:26
+msgid "Подробности проекта"
+msgstr "Project Details"
+
+#: .\main\templates\main\projects_detail.html:75
+msgid "Информация о проекте"
+msgstr "Project Information"
+
+#: .\main\templates\main\projects_detail.html:78
+msgid "Категория"
+msgstr "Category"
+
+#: .\main\templates\main\projects_detail.html:81
+msgid "Клиент"
+msgstr "Client"
+
+#: .\main\templates\main\projects_detail.html:85
+msgid "Дата проекта"
+msgstr "Project Date"
+
+#: .\main\templates\main\projects_detail.html:87
+msgid "URL проекта"
+msgstr "Project URL"
+
+#: .\templates\includes\header.html:38 .\templates\includes\header.html:61
+msgid "Услуги"
+msgstr "Services"
+
+#: .\templates\includes\header.html:41 .\templates\includes\header.html:64
+msgid "Контакты"
+msgstr "Contacts"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:5
+msgid "Select an image to embed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:62
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:151
+msgid "&lsaquo; Prev"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
+msgid "Connect, get help, or contribute"
+msgstr ""

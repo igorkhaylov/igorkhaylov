@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% load static i18n thumbnail %}
+
+{% block title %}
+    {{ portfolio.title }}
+{% endblock %}
+
+{% block body %}
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    {% include "includes/header.html" %}
+    <!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+{#                    <h2>Portfolio Details</h2>#}
+{#                    {{ request.scheme }}#}
+{#                    <hr>#}
+                    <h2>{% trans "Подробности проекта" %}</h2>
+{#                    <hr>#}
+{#                    {{ request.META }}#}
+                    <ol>
+                        <li><a href="{% url "index" %}">{% trans "Главная" %}</a></li>
+                        <li>{{ project.title }}</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Breadcrumbs -->
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+
+                                {% for picture in project.pictures.all %}
+
+                                <div class="swiper-slide">
+                                {% thumbnail picture.picture "1288x600" crop="center" as im %}
+                                    <img src="{{ im.url }}" alt="">
+                                {% endthumbnail %}
+                                </div>
+
+                                {% endfor %}
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="portfolio-description">
+                            <h2>{{ project.title }}</h2>
+                            <p>
+                                {{ project.description|safe }}
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info">
+{#                            <h3>Project information</h3>#}
+                            <h3>{% trans "Информация о проекте" %}</h3>
+                            <ul>
+{#                                <li><strong>Category</strong>: {{ project.category.title }}</li>#}
+                                <li><strong>{% trans "Категория" %}</strong>: {{ project.category.title }}</li>
+                                {% if project.client %}
+{#                                    <li><strong>Client</strong>: {{ project.client }}</li>#}
+                                    <li><strong>{% trans "Клиент" %}</strong>: {{ project.client }}</li>
+                                {% endif %}
+{#                                <li><strong>Project date</strong>: 01 March, 2020</li>#}
+{#                                <li><strong>Project date</strong>: {{ project.date_created|date:"d M, Y" }}</li>#}
+                                <li><strong>{% trans "Дата проекта" %}</strong>: {{ project.date_created|date:"d M, Y" }}</li>
+{#                                <li><strong>Project URL</strong>: <a href="{{ project.project_url }}" target="_blank">{{ project.slug }}</a></li>#}
+                                <li><strong>{% trans "URL проекта" %}</strong>: <a href="{{ project.project_url }}" target="_blank">{{ project.slug }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Portfolio Details Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    {#    {% include "includes/footer.html" %}#}
+
+    <!-- End  Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+{% endblock %}

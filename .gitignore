@@ -1,0 +1,22 @@
+# IDE / OS
+.idea
+.vscode
+.DS_Store
+
+# Python
+venv
+.venv
+__pycache__
+*.py[cod]
+
+# Django
+migrations
+media
+db.sqlite3
+staticfiles
+local_settings.py
+prod_settings.py
+.env
+
+# Vendor template (iPortfolio by BootstrapMade)
+tmp

@@ -1,0 +1,11 @@
+{% load change_lang_tags %}
+{% get_lang as lang %}
+
+
+{% for l in get_lang %}
+
+    <a href="{{ get_lang.lang_url }}" class="bg-gradient">{{ get_lang.lang }}</a>
+
+{% endfor %}
+
+

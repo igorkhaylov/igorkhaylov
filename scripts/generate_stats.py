@@ -45,14 +45,32 @@ THEMES = {
 }
 
 
-def api(path: str) -> dict | list:
-    request = urllib.request.Request(f"{API}{path}")
+def api(path: str, payload: dict | None = None) -> dict | list:
+    data = json.dumps(payload).encode() if payload is not None else None
+    request = urllib.request.Request(f"{API}{path}", data=data)
     request.add_header("Accept", "application/vnd.github+json")
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if token:
         request.add_header("Authorization", f"Bearer {token}")
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.load(response)
+
+
+def public_contributions_last_year() -> int:
+    """Public contributions over the last year, identical for any token.
+
+    totalContributions includes private contributions when the calling token
+    may see them (e.g. the owner's own PAT), so the restricted share is
+    subtracted explicitly — otherwise local runs and CI would disagree.
+    """
+    query = f"""
+    {{ user(login: "{USER}") {{ contributionsCollection {{
+        contributionCalendar {{ totalContributions }}
+        restrictedContributionsCount
+    }} }} }}"""
+    collection = api("/graphql", {"query": query})["data"]["user"]["contributionsCollection"]
+    total = collection["contributionCalendar"]["totalContributions"]
+    return total - collection["restrictedContributionsCount"]
 
 
 def collect() -> tuple[list[tuple[str, str]], list[tuple[str, float]]]:
@@ -68,14 +86,23 @@ def collect() -> tuple[list[tuple[str, str]], list[tuple[str, float]]]:
     own = [r for r in repos if not r["fork"]]
 
     profile = api(f"/users/{USER}")
-    commits = api(f"/search/commits?q=author:{USER}&per_page=1")
-    prs = api(f"/search/issues?q=author:{USER}+type:pr&per_page=1")
+
+    # Deliberately NOT the search API: its results depend on what the calling
+    # token can see (the Actions GITHUB_TOKEN is scoped to this repository and
+    # returns a fraction of what a personal token does). Counting per public
+    # repo keeps the numbers identical no matter which token runs the script.
+    commits = 0
+    for repo in own:
+        for contributor in api(f"/repos/{USER}/{repo['name']}/contributors?per_page=100"):
+            if contributor["login"] == USER:
+                commits += contributor["contributions"]
+                break
 
     stats = [
         ("Public repos", str(len(own))),
         ("Total stars", str(sum(r["stargazers_count"] for r in own))),
-        ("Commits (public)", f"{commits['total_count']:,}"),
-        ("Pull requests", str(prs["total_count"])),
+        ("Commits (public repos)", f"{commits:,}"),
+        ("Contributions (year)", f"{public_contributions_last_year():,}"),
         ("Followers", str(profile["followers"])),
     ]
 

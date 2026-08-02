@@ -1,0 +1,683 @@
+{% extends "base.html" %}
+{% load static i18n thumbnail %}
+
+{#{% block title %}#}
+{##}
+{#{% endblock %}#}
+
+{% block body %}
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    {% include "includes/header.html" %}
+    <!-- End Header -->
+
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+
+            <h1>{% trans "Игорь Хайлов" %}</h1>
+            <p>{% trans "Я" %} <span class="typed" data-typed-items="{% trans "Python Программист, Web Разработчик" %}"></span></p>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="section-title">
+{#                    <h2>About</h2>#}
+                    <h2>{% trans "Обо мне" %}</h2>
+                    <p>
+                        {% trans "Свой путь в IT начал с изучения основ HTML и CSS и Python. Имею опыт написания консольных программ, скриптов на Python для автоматизации задач, десктопные приложения на WxPython, после перешел на разработку Web приложений на Django. " %}
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <img src="{% static "img/profile-img.jpg" %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+{#                        <h3>Python Programmer &amp; Web Developer.</h3>#}
+                        <h3>{% trans "Python Программист &amp; Web Разработчик" %}</h3>
+                        <p class="fst-italic">
+                            {% trans "Разрабатываю Web приложения на Django. Сайты под ключ. SEO продвижение." %}
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li>
+                                        <i class="bi bi-chevron-right"></i>
+{#                                        <strong>Birthday:</strong>#}
+                                        <strong>{% trans "День рождения" %}:</strong>
+                                        <span>29 Jan 1999</span></li>
+                                    <li>
+                                        <i class="bi bi-chevron-right"></i>
+{#                                        <strong>Website:</strong>#}
+                                        <strong>{% trans "Сайт" %}:</strong>
+                                        <span><a href="#">itnova.uz</a></span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-chevron-right"></i>
+{#                                        <strong>Phone:</strong>#}
+                                        <strong>{% trans "Телефон" %}:</strong>
+                                        <span><a href="tel: +998 (33) 345-41-15">+998 (33) 345-41-15</a></span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-chevron-right"></i>
+{#                                        <strong>City:</strong>#}
+                                        <strong>{% trans "Город" %}:</strong>
+{#                                        <span>Samarkand, Uzbekistan</span>#}
+                                        <span>Самарканд, Узбекистан</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li>
+                                        <i class="bi bi-chevron-right"></i>
+{#                                        <strong>Age:</strong>#}
+                                        <strong>{% trans "Возраст" %}:</strong>
+                                        <span>23</span></li>
+                                    <li>
+                                        <i class="bi bi-chevron-right"></i>
+{#                                        <strong>Degree:</strong>#}
+                                        <strong>{% trans "Уровень" %}:</strong>
+{#                                        <span>Master</span>#}
+                                        <span>{% trans "Мидл" %}</span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-chevron-right"></i>
+{#                                        <strong>PhEmailone:</strong>#}
+                                        <strong>{% trans "Почта" %}:</strong>
+                                        <span><a href="mailto: info@itnova.uz">info@itnova.uz</a></span>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-chevron-right"></i>
+{#                                        <strong>Freelance:</strong>#}
+                                        <strong>{% trans "Фриланс" %}:</strong>
+{#                                        <span>Available</span>#}
+                                        <span>{% trans "Возможен" %}</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+{#                            {% trans "С детства интересовался компьютерами и компьютерными технологиями." %}#}
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume">
+            <div class="container">
+
+                <div class="section-title">
+{#                    <h2>Resume</h2>#}
+                    <h2>{% trans "Резюме" %}</h2>
+                    <p>
+                        {% trans "Ищу возможность принять участие в совместной, конкурентной и изобретательной среде, с огромным желанием участвовать в проектировании и разработке масштабных приложений, а также развивать свой потенциал и обновлять свои знания с новыми технологиями." %}
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up">
+{#                        <h3 class="resume-title">Sumary</h3>#}
+                        <h3 class="resume-title">{% trans "Кратко" %}</h3>
+                        <div class="resume-item pb-0">
+{#                            <h4>Alex Smith</h4>#}
+                            <h4>{% trans "Игорь Хайлов" %}</h4>
+                            <p>
+                                <em>
+                                    {% trans "Начал программировать в 2019 году. Работал с отправкой почты, Авторизацией пользователей на сайте, технологией Ajax, картами Api Mapbox. Готов постоянно изучать новые технологии в программировании и применять их на практике. Активно пользуюсь Linux." %}
+                                </em>
+                            </p>
+                            <ul>
+                                <li>{% trans "Узбекистан г.Самарканд" %}</li>
+                                <li><a href="tel: +998 (33) 345-41-15">+998 (33) 345-41-15</a></li>
+                                <li><a href="mailto: info@itnova.uz">info@itnova.uz</a></li>
+                            </ul>
+                        </div>
+
+{#                        <h3 class="resume-title">Education</h3>#}
+                        <h3 class="resume-title">{% trans "Образование" %}</h3>
+                        <div class="resume-item">
+                            <h4>{% trans "Среднее профессиональное" %}</h4>
+                            <h5>2015 - 2018</h5>
+                            <p>
+                                <em>
+                                    {% trans "Самаркандский профессиональный колледж железнодорожного транспорта" %}
+                                </em>
+                            </p>
+                            <p>
+                                {% trans "Специальность - <em>Эксплуатация железных дорог</em>.<br> Профессия - <em>Дежурный по станции</em>." %}
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4> {% trans "Компьютерные курсы" %} </h4>
+                            <h5> 2014 </h5>
+                            <p> <em> {% trans "Учебный центр «Samarqand Bilim Orzu»" %} </em> </p>
+                            <p>
+                                {% trans "На отлично окончил компьютерные курсы по офисным программам и пользованию интернета" %}
+                            </p>
+                        </div>
+
+                        <h3 class="resume-title">{% trans "Образовательные курсы" %}</h3>
+                        <div class="resume-item">
+                            <h4>{% trans "HTML5 &amp; CSS &amp; JavaScript" %}</h4>
+                            <h5>2018 - 2019</h5>
+                            <p> <em> {% trans "Бесплатные курсы на Youtube." %} </em> </p>
+                            <ul>
+                                <li>{% trans "Основные теги HTML" %}</li>
+                                <li>{% trans "Основы CSS" %}</li>
+                                <li>{% trans "Работа с медиафайлами на сайте" %}</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>{% trans "Python" %}</h4>
+                            <h5>2019 - 2020</h5>
+                            <p> <em> {% trans "Курсы программирования Foxford и Youtube" %} </em> </p>
+                            <ul>
+                                <li>{% trans "Программирование на Python" %}</li>
+                                <li>{% trans "Основы ООП и использование на практике" %}</li>
+                                <li>{% trans "Работа с базами данных SQL" %}</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>{% trans "Linux" %}</h4>
+                            <h5>2019 - 2020</h5>
+                            <p><em>{% trans "Администрирование Linux" %}</em></p>
+                            <ul>
+                                <li>{% trans "Знакомство с архитектурой Linux" %}</li>
+                                <li>{% trans "Файловые системы" %}</li>
+                                <li>{% trans "Управление пользователями" %}</li>
+                                <li>{% trans "Работа в Linux" %}</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+{#                        <h3 class="resume-title">Professional Experience</h3>#}
+                        <h3 class="resume-title">{% trans "Профессиональный опыт" %}</h3>
+
+                        <div class="resume-item">
+                            <h4>{% trans "Фриланс" %}</h4>
+                            <h5>{% trans "2020 - Настоящее время" %}</h5>
+                            <p><em>Freelance</em></p>
+                            <ul>
+                                <li>{% trans "Backend разработка сайтов на Django" %}</li>
+                                <li>{% trans "Доработка и поддержка сайтов" %}</li>
+                                <li>{% trans "Разработка Web приложений для бизнеса" %}</li>
+                                <li>{% trans "Преподавал уроки по программированию на Python в it-школе" %}</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <h4> {% trans "Программист, Специалист технической поддержки" %} </h4>
+                            <h5> {% trans "2018 - Настоящее время" %} </h5>
+                            <p> <em> {% trans "ООО «Sam Antep Gilam», г. Самарканд" %} </em> </p>
+                            <ul>
+                                <li> {% trans "Техподдержка и обслуживание компьютерной техники" %} </li>
+                                <li> {% trans "Установка и настройка программного обеспечения" %} </li>
+                                <li> {% trans "Настройка и устранение сетевых неисправностей" %} </li>
+                                <li> {% trans "Установка и настройка камер видеонаблюдения" %} </li>
+                                <li> {% trans "Подключение сертификатов для работы с банк-клиентом" %} </li>
+                                <li> {% trans "Написание Python скриптов для автоматизации работы" %} </li>
+                                <li> {% trans "Решение пользовательских проблем" %} </li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4> {% trans "Оператор ЭВМ" %} </h4>
+                            <h5> 2018 </h5>
+                            <p> <em> {% trans "Топливный железнодорожный склад г. Самарканд" %} </em> </p>
+                            <ul>
+                                <li> {% trans "Техподдержка и обслуживание компьютерной техники" %} </li>
+                                <li> {% trans "Установка и настройка программного обеспечения" %} </li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4> {% trans "Стажировка в электросети" %} </h4>
+                            <h5> 2013 - 2017 </h5>
+                            <p> <em> {% trans "САМАРКАНДСКАЯ ГОРОДСКАЯ ЭЛЕКТРОСЕТЬ - г. САМАРКАНД" %} </em> </p>
+                            <p>{% trans "Стажировка на лето" %}</p>
+                            <ul>
+                                <li> {% trans "Перенос должностных инструкций с письменного в печатный формат" %} </li>
+                                <li> {% trans "Перенос схем в электронный формат " %} </li>
+                                <li> {% trans "Решение мелких проблем с компьютерами" %} </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Resume Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container">
+
+                <div class="section-title">
+{#                    <h2>Portfolio</h2>#}
+                    <h2>{% trans "Портфолио" %}</h2>
+{#                    <p>#}
+{#                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit#}
+{#                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias#}
+{#                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.#}
+{#                    </p>#}
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+{#                            <li data-filter=".filter-app">App</li>#}
+{#                            <li data-filter=".filter-card">Card</li>#}
+{#                            <li data-filter=".filter-web">Web</li>#}
+
+                            {% for category in view.get_categories %}
+                                <li data-filter=".filter-{{ category.slug }}">{{ category.title }}</li>
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+
+                    {% for project in projects %}
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-{{ project.category.slug }}">
+                            <div class="portfolio-wrap">
+                                {% thumbnail project.picture "800x600" crop="center" as im %}
+                                    <img src="{{ im.url }}" class="img-fluid" alt="{{ project.title }}">
+                                {% endthumbnail %}
+                                <div class="portfolio-links">
+                                    <a href="{{ project.picture.url }}" data-gallery="portfolioGallery"
+                                       class="portfolio-lightbox" title="{{ project.title }}"><i
+                                            class="bx bx-plus"></i></a>
+                                    <a href="{{ project.get_absolute_url }}" title="More Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+
+
+
+
+
+
+
+
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-1.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-1.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-2.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-2.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-3.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-3.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-4.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-4.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-5.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-5.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-6.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-6.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-7.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-7.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-8.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-8.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">#}
+{#                        <div class="portfolio-wrap">#}
+{#                            <img src="{% static "img/portfolio/portfolio-9.jpg" %}" class="img-fluid" alt="">#}
+{#                            <div class="portfolio-links">#}
+{#                                <a href="{% static "img/portfolio/portfolio-9.jpg" %}" data-gallery="portfolioGallery"#}
+{#                                   class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>#}
+{#                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+
+
+
+        <!-- ======= Services Section ======= -->
+{#        <section id="services" class="services">#}
+{#            <div class="container">#}
+{##}
+{#                <div class="section-title">#}
+{#                    <h2>Services</h2>#}
+{#                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit#}
+{#                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias#}
+{#                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>#}
+{#                </div>#}
+{##}
+{#                <div class="row">#}
+{#                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">#}
+{#                        <div class="icon"><i class="bi bi-briefcase"></i></div>#}
+{#                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>#}
+{#                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias#}
+{#                            excepturi sint occaecati cupiditate non provident</p>#}
+{#                    </div>#}
+{#                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">#}
+{#                        <div class="icon"><i class="bi bi-card-checklist"></i></div>#}
+{#                        <h4 class="title"><a href="">Dolor Sitema</a></h4>#}
+{#                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip#}
+{#                            ex ea commodo consequat tarad limino ata</p>#}
+{#                    </div>#}
+{#                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">#}
+{#                        <div class="icon"><i class="bi bi-bar-chart"></i></div>#}
+{#                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>#}
+{#                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum#}
+{#                            dolore eu fugiat nulla pariatur</p>#}
+{#                    </div>#}
+{#                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">#}
+{#                        <div class="icon"><i class="bi bi-binoculars"></i></div>#}
+{#                        <h4 class="title"><a href="">Magni Dolores</a></h4>#}
+{#                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia#}
+{#                            deserunt mollit anim id est laborum</p>#}
+{#                    </div>#}
+{#                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">#}
+{#                        <div class="icon"><i class="bi bi-brightness-high"></i></div>#}
+{#                        <h4 class="title"><a href="">Nemo Enim</a></h4>#}
+{#                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis#}
+{#                            praesentium voluptatum deleniti atque</p>#}
+{#                    </div>#}
+{#                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">#}
+{#                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>#}
+{#                        <h4 class="title"><a href="">Eiusmod Tempor</a></h4>#}
+{#                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero#}
+{#                            tempore, cum soluta nobis est eligendi</p>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </section>#}
+        <!-- End Services Section -->
+
+        <!-- ======= Testimonials Section ======= -->
+{#        <section id="testimonials" class="testimonials section-bg">#}
+{#            <div class="container">#}
+{##}
+{#                <div class="section-title">#}
+{#                    <h2>Testimonials</h2>#}
+{#                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit#}
+{#                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias#}
+{#                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>#}
+{#                </div>#}
+{##}
+{#                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">#}
+{#                    <div class="swiper-wrapper">#}
+{##}
+{#                        <div class="swiper-slide">#}
+{#                            <div class="testimonial-item" data-aos="fade-up">#}
+{#                                <p>#}
+{#                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>#}
+{#                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit#}
+{#                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,#}
+{#                                    risus at semper.#}
+{#                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>#}
+{#                                </p>#}
+{#                                <img src="{% static "img/testimonials/testimonials-1.jpg" %}" class="testimonial-img"#}
+{#                                     alt="">#}
+{#                                <h3>Saul Goodman</h3>#}
+{#                                <h4>Ceo &amp; Founder</h4>#}
+{#                            </div>#}
+{#                        </div><!-- End testimonial item -->#}
+{##}
+{#                        <div class="swiper-slide">#}
+{#                            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">#}
+{#                                <p>#}
+{#                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>#}
+{#                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid#}
+{#                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet#}
+{#                                    legam anim culpa.#}
+{#                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>#}
+{#                                </p>#}
+{#                                <img src="{% static "img/testimonials/testimonials-2.jpg" %}" class="testimonial-img"#}
+{#                                     alt="">#}
+{#                                <h3>Sara Wilsson</h3>#}
+{#                                <h4>Designer</h4>#}
+{#                            </div>#}
+{#                        </div><!-- End testimonial item -->#}
+{##}
+{#                        <div class="swiper-slide">#}
+{#                            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">#}
+{#                                <p>#}
+{#                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>#}
+{#                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem#}
+{#                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint#}
+{#                                    minim.#}
+{#                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>#}
+{#                                </p>#}
+{#                                <img src="{% static "img/testimonials/testimonials-3.jpg" %}" class="testimonial-img"#}
+{#                                     alt="">#}
+{#                                <h3>Jena Karlis</h3>#}
+{#                                <h4>Store Owner</h4>#}
+{#                            </div>#}
+{#                        </div><!-- End testimonial item -->#}
+{##}
+{#                        <div class="swiper-slide">#}
+{#                            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">#}
+{#                                <p>#}
+{#                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>#}
+{#                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim#}
+{#                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem#}
+{#                                    dolore labore illum veniam.#}
+{#                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>#}
+{#                                </p>#}
+{#                                <img src="{% static "img/testimonials/testimonials-4.jpg" %}" class="testimonial-img"#}
+{#                                     alt="">#}
+{#                                <h3>Matt Brandon</h3>#}
+{#                                <h4>Freelancer</h4>#}
+{#                            </div>#}
+{#                        </div><!-- End testimonial item -->#}
+{##}
+{#                        <div class="swiper-slide">#}
+{#                            <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">#}
+{#                                <p>#}
+{#                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>#}
+{#                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster#}
+{#                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam#}
+{#                                    culpa fore nisi cillum quid.#}
+{#                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>#}
+{#                                </p>#}
+{#                                <img src="{% static "img/testimonials/testimonials-5.jpg" %}" class="testimonial-img"#}
+{#                                     alt="">#}
+{#                                <h3>John Larson</h3>#}
+{#                                <h4>Entrepreneur</h4>#}
+{#                            </div>#}
+{#                        </div><!-- End testimonial item -->#}
+{##}
+{#                    </div>#}
+{#                    <div class="swiper-pagination"></div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </section>#}
+        <!-- End Testimonials Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+{#                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit#}
+{#                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias#}
+{#                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.#}
+{#                    </p>#}
+                </div>
+
+                <div class="row" data-aos="fade-in">
+
+{#                    <div class="col-lg-5 d-flex align-items-stretch">#}
+{#                        <div class="info">#}
+{#                            <div class="address">#}
+{#                                <i class="bi bi-geo-alt"></i>#}
+{#                                <h4>Location:</h4>#}
+{#                                <p>A108 Adam Street, New York, NY 535022</p>#}
+{#                            </div>#}
+{##}
+{#                            <div class="email">#}
+{#                                <i class="bi bi-envelope"></i>#}
+{#                                <h4>Email:</h4>#}
+{#                                <p>info@example.com</p>#}
+{#                            </div>#}
+{##}
+{#                            <div class="phone">#}
+{#                                <i class="bi bi-phone"></i>#}
+{#                                <h4>Call:</h4>#}
+{#                                <p>+1 5589 55488 55s</p>#}
+{#                            </div>#}
+{##}
+{#                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"#}
+{#                                    frameborder="0" style="border:0; width: 100%; height: 290px;"#}
+{#                                    allowfullscreen></iframe>#}
+{#                        </div>#}
+{#                    </div>#}
+
+{#                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">                    #}
+                    <div class="col-lg-12 mt-12 mt-lg-0 d-flex align-items-stretch">
+
+                        <form action="" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="name">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Message</label>
+                                <textarea class="form-control" name="message" rows="10" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+{#    {% include "includes/footer.html" %}#}
+
+    <!-- End  Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+
+{% endblock %}

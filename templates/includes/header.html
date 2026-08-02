@@ -1,0 +1,77 @@
+{% load static i18n %}
+
+<header id="header">
+    <div class="d-flex flex-column">
+
+        <div class="profile">
+            <img src="{% static "img/profile-img.jpg" %}" alt="" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="{% url "index" %}">{% trans "Игорь Хайлов" %}</a></h1>
+            <div class="social-links mt-3 text-center">
+                <a href="https://t.me/igorkhaylov" class="telegram"><i class="bx bxl-telegram"></i></a>
+                <a href="https://www.facebook.com/igorkhaylov" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/igorkhaylov" class="instagram"><i class="bx bxl-instagram"></i></a>
+
+                <a href="{{ lang }}" class="bg-gradient">{% if "/ru/" in lang %}RU{% else %}EN{% endif %}</a>
+
+            </div>
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+
+            {% if "/ru/" in lang %}
+
+            <ul>
+{#                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>#}
+{#                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>{% trans "Главная" %}</span></a></li>#}
+                <li><a href="{{ request.scheme }}://{{ request.get_host }}/en/#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>{% trans "Главная" %}</span></a></li>
+{#                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>#}
+{#                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>{% trans "Обо мне" %}</span></a></li>#}
+                <li><a href="{{ request.scheme }}://{{ request.get_host }}/en/#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>{% trans "Обо мне" %}</span></a></li>
+{#                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>#}
+{#                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>{% trans "Резюме" %}</span></a></li>#}
+                <li><a href="{{ request.scheme }}://{{ request.get_host }}/en/#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>{% trans "Резюме" %}</span></a></li>
+{#                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>#}
+{#                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>{% trans "Портфолио" %}</span></a></li>#}
+                <li><a href="{{ request.scheme }}://{{ request.get_host }}/en/#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>{% trans "Портфолио" %}</span></a></li>
+{#                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>#}
+{#                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>{% trans "Услуги" %}</span></a></li>#}
+
+{#                <li><a href="{{ request.scheme }}://{{ request.get_host }}/en/#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>{% trans "Услуги" %}</span></a></li>#}
+
+{#                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>#}
+{#                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>{% trans "Контакты" %}</span></a></li>#}
+                <li><a href="{{ request.scheme }}://{{ request.get_host }}/en/#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>{% trans "Контакты" %}</span></a></li>
+            </ul>
+
+            {% else %}
+
+                <ul>
+                    {#                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>#}
+                    {#                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>{% trans "Главная" %}</span></a></li>#}
+                    <li><a href="{{ request.scheme }}://{{ request.get_host }}/ru/#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>{% trans "Главная" %}</span></a></li>
+                    {#                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>#}
+                    {#                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>{% trans "Обо мне" %}</span></a></li>#}
+                    <li><a href="{{ request.scheme }}://{{ request.get_host }}/ru/#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>{% trans "Обо мне" %}</span></a></li>
+                    {#                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>#}
+                    {#                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>{% trans "Резюме" %}</span></a></li>#}
+                    <li><a href="{{ request.scheme }}://{{ request.get_host }}/ru/#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>{% trans "Резюме" %}</span></a></li>
+                    {#                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>#}
+                    {#                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>{% trans "Портфолио" %}</span></a></li>#}
+                    <li><a href="{{ request.scheme }}://{{ request.get_host }}/ru/#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>{% trans "Портфолио" %}</span></a></li>
+                    {#                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>#}
+                    {#                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>{% trans "Услуги" %}</span></a></li>#}
+
+{#                    <li><a href="{{ request.scheme }}://{{ request.get_host }}/ru/#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>{% trans "Услуги" %}</span></a></li>#}
+
+                    {#                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>#}
+                    {#                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>{% trans "Контакты" %}</span></a></li>#}
+                    <li><a href="{{ request.scheme }}://{{ request.get_host }}/ru/#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>{% trans "Контакты" %}</span></a></li>
+                </ul>
+
+            {% endif %}
+        </nav>
+        <!-- .nav-menu -->
+    </div>
+</header>
+<!-- End Header -->
+
