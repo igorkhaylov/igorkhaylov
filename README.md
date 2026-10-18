@@ -28,6 +28,8 @@ language models. Coding since 2019.
 - 🎟️ Launching the **ticketing system of the Centre of Islamic Civilization**: website, kiosks,
   cashier desk, turnstiles and an AI purchase assistant
 - 📈 Growing the **monitoring platform** that covers ~85 servers and ~190 services
+- 📬 Building **mailnest**, my own mail server: Postfix, Dovecot, Rspamd and Roundcube on my own
+  Dockerfiles, managed from Django
 - 🧠 Running **GPU servers with LLMs**: 8× NVIDIA B200 and 8× RTX PRO 6000
 
 ### Infrastructure I'm responsible for
@@ -50,7 +52,7 @@ runbooks and incident post-mortems. The details are on [igorkhaylov.uz](https://
 | **[Monitoring platform](https://igorkhaylov.uz/en/projects/monitoring/)** | Metrics, logs, alerts and a status page for the whole fleet | Author |
 | **[WOSCU](https://woscu.org)** | Portal on the cultural heritage of Uzbekistan | Backend & DevOps |
 
-All 26 projects, with what I did on each: **[igorkhaylov.uz](https://igorkhaylov.uz/en/#projects)**.
+All 27 projects, with what I did on each: **[igorkhaylov.uz](https://igorkhaylov.uz/en/#projects)**.
 
 ### Open source
 
@@ -130,6 +132,8 @@ All 26 projects, with what I did on each: **[igorkhaylov.uz](https://igorkhaylov
   свой сервер вместо облака вендора, веб-консоль и приложение на экране робота;
 - запускаю билетную систему Центра исламской цивилизации: сайт, киоски, касса, турникеты и AI-ассистент;
 - развиваю платформу мониторинга на ~85 серверов и ~190 сервисов;
+- строю свой почтовый сервер mailnest: Postfix, Dovecot, Rspamd и Roundcube на своих Dockerfile,
+  управление на Django;
 - сопровождаю GPU-серверы с LLM: 8× NVIDIA B200 и 8× RTX PRO 6000.
 
 **Инфраструктура в моей зоне ответственности:** ~100 серверов на пяти площадках, 10 узлов
