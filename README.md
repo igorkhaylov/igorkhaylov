@@ -52,7 +52,7 @@ runbooks and incident post-mortems. The details are on [igorkhaylov.uz](https://
 | **[Monitoring platform](https://igorkhaylov.uz/en/projects/monitoring/)** | Metrics, logs, alerts and a status page for the whole fleet | Author |
 | **[WOSCU](https://woscu.org)** | Portal on the cultural heritage of Uzbekistan | Backend & DevOps |
 
-All 27 projects, with what I did on each: **[igorkhaylov.uz](https://igorkhaylov.uz/en/#projects)**.
+All 28 projects, with what I did on each: **[igorkhaylov.uz](https://igorkhaylov.uz/en/#projects)**.
 
 ### Open source
 
