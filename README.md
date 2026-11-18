@@ -7,6 +7,7 @@
 
 <p align="center">
   <a href="https://igorkhaylov.uz"><img alt="Website" src="https://img.shields.io/badge/Website-igorkhaylov.uz-10B981?style=flat-square&logo=googlechrome&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/igorkhaylov/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-igorkhaylov-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="https://t.me/igorkhaylov"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-@igorkhaylov-26A5E4?style=flat-square&logo=telegram&logoColor=white"></a>
   <a href="mailto:igorkhaylov@yandex.com"><img alt="Email" src="https://img.shields.io/badge/Email-igorkhaylov@yandex.com-EA4335?style=flat-square"></a>
 </p>
@@ -144,5 +145,5 @@ Proxmox VE, 1,4 ПБ хранилища, 166 виртуальных машин, 
 </details>
 
 <p align="center">
-  <sub>Portfolio: <a href="https://igorkhaylov.uz">igorkhaylov.uz</a> · source: <a href="https://github.com/igorkhaylov/portfolio">igorkhaylov/portfolio</a></sub>
+  <sub>Portfolio: <a href="https://igorkhaylov.uz">igorkhaylov.uz</a> · LinkedIn: <a href="https://www.linkedin.com/in/igorkhaylov/">igorkhaylov</a> · source: <a href="https://github.com/igorkhaylov/portfolio">igorkhaylov/portfolio</a></sub>
 </p>
