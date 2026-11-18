@@ -63,7 +63,6 @@ All 28 projects, with what I did on each: **[igorkhaylov.uz](https://igorkhaylov
 | **[project-template](https://github.com/igorkhaylov/project-template)** | Full-stack starter: Django backend + React SPA + ops layer, a shared OpenAPI contract, Kubernetes-ready images |
 | **[react-template](https://github.com/igorkhaylov/react-template)** | React 19 + TypeScript frontend starter: Vite, TanStack Router/Query, Tailwind 4, i18n, runtime-configured Docker image |
 | **[django-stdimage](https://github.com/igorkhaylov/django-stdimage)** | Maintained fork: Django 5+ storage API, WebP variations, DRF serializers |
-| **[portfolio](https://github.com/igorkhaylov/portfolio)** | Source of [igorkhaylov.uz](https://igorkhaylov.uz): bilingual Django site, hand-written front end, served from my own server |
 
 ### Tech stack
 
@@ -145,5 +144,5 @@ Proxmox VE, 1,4 ПБ хранилища, 166 виртуальных машин, 
 </details>
 
 <p align="center">
-  <sub>Portfolio: <a href="https://igorkhaylov.uz">igorkhaylov.uz</a> · LinkedIn: <a href="https://www.linkedin.com/in/igorkhaylov/">igorkhaylov</a> · source: <a href="https://github.com/igorkhaylov/portfolio">igorkhaylov/portfolio</a></sub>
+  <sub>Portfolio: <a href="https://igorkhaylov.uz">igorkhaylov.uz</a> · LinkedIn: <a href="https://www.linkedin.com/in/igorkhaylov/">igorkhaylov</a></sub>
 </p>
